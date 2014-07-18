@@ -1,0 +1,42 @@
+{% extends "_headerbase.html" %}
+{% block bodycontent %}
+
+
+
+      <div class="container starter-template">
+        <h1>{{greetings}}</h1>
+        <h3>{{fdback}}</h3>
+        <form method="post" action="/" class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+            <input type="text" name="guess" class="form-control" placeholder="Guess">
+          </div>
+          <button type="submit" class="btn btn-default">Enter Guess</button>
+
+         <h2>{{stguess}}</h2>
+        </form>        
+      </div>      
+
+
+
+ 
+
+
+
+
+
+    <!-- Footer starts here  -->
+
+      <div id="footer">
+        <div class="container">
+          <p class="pull-right"><a href="#">Afrimations.tv</a></p>
+          <p class="pull-left">About</p>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>
+<!--  Insert end block to close header file section -->
+{% endblock %}
+

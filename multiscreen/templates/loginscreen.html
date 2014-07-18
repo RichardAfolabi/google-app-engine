@@ -1,0 +1,42 @@
+<!-- Insert header file here -->
+
+{% extends "_headerbase.html" %}
+  {% block title %} Login - Afrimations.tv {% endblock %}
+
+{% block bodycontent %} 
+
+<div class="container starter-template">
+	<h2> Please login </h2>
+	<p> Please enter your ID and password to log in to your account </p>
+
+	<!-- Page specific contents below this line -->
+	<form method="post" action="/login">
+		 Account: <input type="text" name="account"/> <br>
+		 Password: <input type="password" name="password"/> <br/>
+		 <input type="submit" value="Login"/>
+		 <input type="submit" value="Cancel" onclick="window.location='/'; return false;"/>
+	 </form>
+</div>      
+
+	{% if error %}
+		<p> {{error}} </p>
+	{% endif %}
+
+
+
+
+    <!-- Footer starts here  -->
+
+      <div id="footer">
+        <div class="container">
+          <p class="pull-right"><a href="#">Afrimations.tv</a></p>
+          <p class="pull-left">About</p>
+        </div>
+      </div>
+
+
+    </div>
+  </body>
+</html>
+<!--  Insert end block to close header file section -->
+{% endblock %}
